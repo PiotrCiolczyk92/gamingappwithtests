@@ -1,4 +1,4 @@
-package pl.gamingapp.playerinput;
+package pl.gamingapp.player;
 
 public class PlayerNumbersReceiver {
 

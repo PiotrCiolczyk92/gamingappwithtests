@@ -1,4 +1,4 @@
-package pl.gamingapp.playerinput;
+package pl.gamingapp.player;
 
 import org.junit.jupiter.api.Test;
 
