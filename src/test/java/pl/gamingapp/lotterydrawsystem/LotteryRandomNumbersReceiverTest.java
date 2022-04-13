@@ -17,4 +17,10 @@ class LotteryRandomNumbersReceiverTest {
         createConstructor();
         Assertions.assertEquals(6, lrn.getLuckyDrawnNumbers().length);
     }
+
+    @Test
+    public void checkIfLotteryReceiverConstructorInitializingRandomClassInstance() {
+        createConstructor();
+        Assertions.assertNotNull(lrn.getLuckyDraw());
+    }
 }
