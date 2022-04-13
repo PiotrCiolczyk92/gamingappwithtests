@@ -1,13 +1,20 @@
 package pl.gamingapp.lotterydrawsystem;
 
+import org.junit.BeforeClass;
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.assertNotNull;
-
 class LotteryRandomNumbersReceiverTest {
+    public static LotteryRandomNumbersReceiver lrn;
+
+    @BeforeClass
+    public static void createConstructor() {
+        lrn = new LotteryRandomNumbersReceiver();
+    }
 
     @Test
-    public void checkIfEmptyConstructorForThisClassWorksCorrectly() {
-        assertNotNull(new LotteryRandomNumbersReceiver());
+    public void checkIfLotteryReceiverConstructorInitializingArrayOfLengthSix() {
+        createConstructor();
+        Assertions.assertEquals(6, lrn.getLuckyDrawnNumbers().length);
     }
 }
